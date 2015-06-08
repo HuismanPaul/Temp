@@ -1,0 +1,20 @@
+#
+#scriptnaam : install_schema <file>
+#parameterfile : /opt/<app>/db/config.version/schema.properties
+#
+# In-line help voor de property eigenschappen.
+# formaat na de declaratie is als volgt :
+#    schemaname:intitial_size:next_size:max_size
+#
+# Hierbij zijn de volgende velden gedefinieerd :
+#  schemaname           - naam van het schema. Er worden 2 afgeleide
+#                         schemanamen aangemaakt welke gelieerd zijn,
+#                         dit zijn de batch en kijk schema's.
+#  initial_size         - initieel te alloceren ruimte voor de tablespace in Mb.
+#  next_size            - incrementele groei waarde van de tablespace in Mb
+#  max_size             - maximale afmeteing van de tablespace in Mb
+#
+#
+# Voorbeeld :
+#SCHEMA_USER=vmb:4096:128:8192
+

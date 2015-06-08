@@ -1,0 +1,4 @@
+<create>
+   <factory type="queue" connect_attempt_count="2" connect_attempt_delay="5000" connect_attempt_timeout="2500" reconnect_attempt_count="100" reconnect_attempt_delay="500" reconnect_attempt_timeout="2500" name="QueueConnectionFactory2">
+   </factory> 
+</create>

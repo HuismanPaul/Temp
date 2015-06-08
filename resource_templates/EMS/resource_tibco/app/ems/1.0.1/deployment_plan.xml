@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploymentPlan xmlns="urn:www.prorail.nl/esb/deployment_plan">
+  <domain name="ovos" user="admin" password="tibco"> 
+    <machines>
+      <machine role="ems" version="5.1.5-1480b1">ovos1c.platform.ot</machine>
+      <machine role="ems" version="5.1.5-1480b1">ovos1d.platform.ot</machine>
+    </machines>
+
+    <value parameter="ESB.EMS.User">admin</value>
+    <value parameter="ESB.EMS.Pass">tibco</value>
+    <value parameter="ESB.EMS.Prefix">O.</value>
+
+    <ems user="${ESB.EMS.User}" password="${ESB.EMS.Pass}" port="7224">
+      <include file="ems_users_7224.xml"/>
+      <include file="ems_topics_7224.xml"/>
+      <include file="ems_queues_7224.xml"/>
+    </ems>
+
+    <ems user="${ESB.EMS.User}" password="${ESB.EMS.Pass}" port="7226">
+      <include file="ems_users_7226.xml"/>
+      <include file="ems_topics_7226.xml"/>
+      <include file="ems_queues_7226.xml"/>
+    </ems>
+
+    <ems user="${ESB.EMS.User}" password="${ESB.EMS.Pass}" port="7228">
+      <include file="ems_users_7228.xml"/>
+      <include file="ems_topics_7228.xml"/>
+      <include file="ems_queues_7228.xml"/>
+    </ems>
+
+    <ems user="${ESB.EMS.User}" password="${ESB.EMS.Pass}" port="7230">
+      <include file="ems_users_7230.xml"/>
+      <include file="ems_topics_7230.xml"/>
+      <include file="ems_queues_7230.xml"/>
+    </ems>
+  </domain>
+</deploymentPlan>

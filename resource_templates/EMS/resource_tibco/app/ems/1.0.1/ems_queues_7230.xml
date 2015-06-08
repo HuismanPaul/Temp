@@ -1,0 +1,5 @@
+<create>
+   <queue expiration="5sec" secure="true" maxRedelivery="2" maxmsgs="330" overflowPolicy="discardOld" prefetch="5" name="7230.${ESB.EMS.Prefix}Besturing.MaterieelTreinPositieService.1.MaterieelTreinMetingBericht-GPS.Event.1.MTPS.1">
+     <reader>mtps</reader>
+   </queue>
+</create>

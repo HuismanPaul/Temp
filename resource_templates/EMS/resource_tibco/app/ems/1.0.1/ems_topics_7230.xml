@@ -1,0 +1,7 @@
+<create>
+   <topic expiration="5sec" secure="true" maxmsgs="330" overflowPolicy="discardOld" prefetch="5" name="${ESB.EMS.Prefix}Besturing.MaterieelPositieService.1.MaterieelTreinMetingBericht.Event.1">
+     <bridge_to>
+       <queue name="${ESB.EMS.Prefix}Besturing.MaterieelPositieService.1.MaterieelTreinMetingBericht.Event.1.UTS_GateKeeperPubSub-PIADD-KA"/>
+     </bridge_to>
+   </topic>
+</create>
