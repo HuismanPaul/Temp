@@ -1,3 +1,5 @@
+ # nog een test
+
 #!/bin/bash
 #
 # SCRIPT
