@@ -1,3 +1,6 @@
+# DIT IS EEN GITHUB TEST!!!
+
+
 #!/bin/bash
 #
 # SCRIPT
